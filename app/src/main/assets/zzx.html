@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script type="text/javascript">
+function javacalljs(){
+	 document.getElementById("content").innerHTML +=   
+         "<br\>andorid调用了javacalljs()方法";
+}
+
+function javacalljswithargs(arg){
+	 document.getElementById("content").innerHTML +=   
+        "<br\>andorid调用了js中javacalljswithargs(arg)方法，参数是:"+arg;
+}
+
+
+
+    </script>
+</head>
+<body>
+这是鲜鲜哥js与webview交互的webview
+<br/>
+<a onClick="window.zzx.startFunction()">点击我：js将调用android中startFunction()方法</a><br/>
+<a onClick="window.zzx.startFunction('鲜鲜哥')">点击我：js将调用android中startFunction(String str)方法</a>
+<br/>
+<div id="content">内容content</div>
+</body>
+</html>
